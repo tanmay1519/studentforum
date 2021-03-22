@@ -1,0 +1,46 @@
+{% extends 'mainApp/basic.html' %}
+
+{% block title %} 
+SignIn
+{% endblock %}
+{% block css %} 
+<style>
+.fill{
+  height:80%;
+}
+.alignment{
+  align-items:center;
+  justify-content:space-around;
+  display: flex;
+  flex-direction: column;
+}
+</style>
+{%endblock%}
+{% block body %} 
+<div class="row mt-5">
+<div class="container col-4  center">
+  <div class="alignment mb-3">
+    <h4 >Sign In </h4>
+  </div>
+<div class="mb-3 row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="staticEmail" >
+    </div>
+  </div>
+
+  <div class="mb-3 row">
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword">
+    </div>
+  </div>
+  <div class="alignment">
+    <button type="button" class="btn btn-success ">Sign in </button>
+    <a type="button" class="text-primary center mt-1" href="/signup/">Create Account</a>
+  </div>
+</div>
+
+
+</div>
+{% endblock %}
